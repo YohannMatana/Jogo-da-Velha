@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #212529;
+  --grid-color: #6c7074;
+  --border-color: #666;
+  --font-color: #f1f5f9;
+  --primary-color: #4dff91;
+  --error-color: #ff0043;
+  --start-color: #b6bdb8;
+  --quadrado-color: #ddd;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 1.5rem 2.5rem;
+  position: relative;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+#themeSwitcher {
+  background-color: var(--bg-color);
+  border: .125rem solid var(--font-color);
+  color: var(--font-color);
+}
+
+#themeSwitcher:hover {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}
+
+button {
+  background-color: var(--start-color);
+  border: none;
+  border-radius: .50rem;
+  font-weight: 700;
+  padding: .5rem 1rem;
+  transition: .15s;
+}
+
+label {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  color: var(--font-color);
+  display: block;
+  font-size: 1.75rem;
+  margin: .5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10%;
+}
+
+input {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  color: var(--font-color);
+  display: block;
+  font-size: 1.75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: end;
+  width: 83%;
+} 
+
+#start {
+  background-color: var(--grid-color);
+  align-items: center;
+  margin-left: 16.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#gameBoard {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 9rem 9rem 9rem;
+  grid-template-rows: 9rem 9rem 9rem;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 7.5rem;
+  max-width: 19rem;
+  border: none;
+  border-radius: .25rem;
+  text-align: center;
+  width: 60%;
+}
+
+#gameBoard span {
+  background-color: var(--quadrado-color);
+  color: var(--bg-color);
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  border: none;
+  border-radius: .25rem;
+  font-weight: 700;
+  padding: .5rem 1rem;
+  transition: .15s;
+}
+
+#gameBoard span.win {
+  background-color: #25a340;
+}
+
+#gameBoard span:hover {
+  filter: brightness(0.8);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+  }
+  
+.justify-between {
+  justify-content: space-between;
+  }
